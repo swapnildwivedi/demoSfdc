@@ -1,0 +1,76 @@
+<template>
+    <lightning-card title="CPAT Administration Settings">
+        <lightning-record-edit-form
+        mode="edit"
+        onsuccess={successHandler}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                
+                    <lightning-input label="Franchise"></lightning-input>
+                  
+                
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input label="Time Period"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-button-group>
+                    <lightning-button type="submit" variant="brand" name="save" label="Save"></lightning-button>
+                    <lightning-button label="Discard Changes" onclick={resetHandler}></lightning-button>
+                    <lightning-button label="Run CR Process"></lightning-button>
+                </lightning-button-group>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="toggle" label="Lock Plan"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="toggle" label="Rep Plan Lock"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="toggle" label="DM Plan Lock"></lightning-input>
+            </div>
+                
+                
+
+                
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="toggle" label="HQ Lock Plan"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="date" label="Refinement End Date"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="date" label="Refinement Start Date"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="date" label="Rep End Date"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="date" label="DM End Date"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="date" label="HQ End Date"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input label="Minimum Calls"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input label="Minimum Targets"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input label="Maximum Calls"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input label="Maximum Targets"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input label="Current Quarter"></lightning-input>
+                </div>                
+
+
+
+
+        </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
